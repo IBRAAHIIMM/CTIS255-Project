@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hangman</title>
+    <link rel="stylesheet" type="text/css" href="hangman.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="hangman.js"></script>
+</head>
+<body>
+    <div id="hangmanCont">
+        <img src="hangman0.png" id="hangmanImage">
+        <div id="wordDisplay"></div>
+        <div id="letters">
+            <p>Guess a letter:</p>
+            <input type="text" id="guess" maxlength="1">
+            <button id="submitGuess">Submit Guess</button>
+        </div>
+        <p id="resultMessage"></p>
+        Select word topic:
+        <select name="hangmanTopics" id="hangmanTopics">
+              <option value="exercises">Exercises</option>
+              <option value="diseases">Diseases</option>
+              <option value="healthy_foods">Healthy Foods</option>
+        </select>
+        <button id="resetButton">Reset Game</button>
+    </div>
+    <div id="descCont">
+        <br><br> This <strong>"Hangman Game"</strong> is developed by our lovely team. The main motivation behind this game is to foster healthy lifestyle for all people.
+        Everybody needs to learn how to stay healthy and to have an active life, and the consequences when not doing so. Therefore, if you do not know the content
+        of this webpage then you are one of the candidates who hange themselves unknowingly. <strong>Please read the webpage carefully!</strong>
+    </div>
+</body>
+</html>
